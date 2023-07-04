@@ -1,5 +1,5 @@
 import arcade
-
+from Component import Component
 class Change():
     change_x = 0
     change_y = 0
@@ -16,7 +16,7 @@ class Change():
     def get_y(self):
         return self.change_y
 
-class MoveComponent():
+class MoveComponent(Component):
     movement = Change()
     new_x = 0
     new_y = 0
